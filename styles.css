@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #d0e7ff, #a4d7e1);
+    overflow: hidden;
+  }
+  
+  h1, h2 {
+    color: #004f7d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  button {
+    background-color: #67b3c8;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #4e8da4;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .illusion {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(103, 179, 200, 0.3));
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  
